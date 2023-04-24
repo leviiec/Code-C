@@ -1,5 +1,5 @@
-__Bài 1. Print Hello World__
-    #include <stdio.h>
+**Bài 1. Print Hello World**
+   ` #include <stdio.h>
     #include <string.h>
     #include <math.h>
     #include <stdlib.h>
@@ -12,5 +12,5 @@ __Bài 1. Print Hello World__
     printf("%s\n","Hello World !");
     printf("%s\n","28tech C++ programming !");
     return 0;
-  }
+  }`
   
