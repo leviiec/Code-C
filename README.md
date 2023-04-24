@@ -52,11 +52,14 @@ int main() {
 int main() {
     
     int x,y,z,t;
+    
     scanf("%d %d %d %d\n",&x,&y,&z,&t);
     printf("%d,%d,%d,%d\n",y,z,x,t);
+    
     long long sum =x+y+z+t;
     printf("%lld\n",sum);
-    long long bieu_thuc= x-y+z*t;
+   
+   long long bieu_thuc= x-y+z*t;
     printf("%lld\n",bieu_thuc);
          return 0;
 }
