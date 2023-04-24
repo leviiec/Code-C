@@ -1,5 +1,6 @@
 **Bài 1. Print Hello World**
-` #include <stdio.h>
+```
+#include <stdio.h>
   #include <string.h>
   #include <math.h>
   #include <stdlib.h>
@@ -12,4 +13,5 @@ int main() {
     printf("%s\n","28tech C++ programming !");
  
     return 0;
-}`
+}
+```
