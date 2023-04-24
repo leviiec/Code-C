@@ -1,2 +1,16 @@
-**Bài 1. Print Hello World**
-#DJSDGJLSKDG
+__Bài 1. Print Hello World__
+    #include <stdio.h>
+    #include <string.h>
+    #include <math.h>
+    #include <stdlib.h>
+
+  int main() {
+    
+    int x;
+    scanf("%d",&x);
+    printf("%d\n",x);
+    printf("%s\n","Hello World !");
+    printf("%s\n","28tech C++ programming !");
+    return 0;
+  }
+  
