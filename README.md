@@ -81,3 +81,39 @@ int main() {
     return 0;
 }
 ```
+**Bài 5. Hàm sqrt và cbrt**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    
+    float n;
+    scanf("%f\n",&n);
+    printf("%.2f\n",sqrt(n));
+    printf("%.3f\n",cbrt(n));
+    return 0;
+}
+```
+**Bài 6. Hàm ceil, floor, round**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+   
+    double x;
+    
+    scanf("%lf\n",&x);
+    
+    printf("%d\n",(int)floor(x));
+    printf("%d\n",(int)ceil(x));
+    printf("%d\n",(int)round(x));
+       
+    return 0;
+}
+```
