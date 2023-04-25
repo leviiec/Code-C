@@ -90,10 +90,10 @@ int main() {
 
 int main() {
     
-    float n;
-    scanf("%f\n",&n);
-    printf("%.2f\n",sqrt(n));
-    printf("%.3f\n",cbrt(n));
+    float x;
+    scanf("%f\n",&x);
+    printf("%.2f\n",sqrt(x));
+    printf("%.3f\n",cbrt(x));
     return 0;
 }
 ```
@@ -114,6 +114,70 @@ int main() {
     printf("%d\n",(int)ceil(x));
     printf("%d\n",(int)round(x));
        
+    return 0;
+}
+```
+**Bài 7. Chữ số cuối cùng và 2 chữ số cuối cùng**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    long long x;
+    scanf("%lld\n",&x);
+    
+    printf("%d\n",x%10);
+    printf("%d\n",x%100)
+    return 0;
+}
+```
+**Bài 8. Phép chia**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b;
+    scanf("%d %d\n",&b,&a);
+    printf("%d\n", a/b);
+    printf("%.2f\n",(float)a/b);
+    
+    return 0;
+}
+```
+**Bài 9. Xóa số**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    long long x;
+    scanf("%lld\n",&x);
+    printf("%lld\n",x/1000);
+    
+    return 0;
+}
+```
+
+**Bài 10. Phép chia dư**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    
+    int a,b;
+    scanf("%d     %d\n",&a,&b);
+    printf("%d\n",a%b);    
+    
     return 0;
 }
 ```
