@@ -199,3 +199,18 @@ int main() {
     return 0;
 }
 ```
+**Bài 12. Hàm F(x, y)**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int x,y;
+    scanf("%d %d\n",&x,&y);
+    printf("%lld\n",5*x+2*y+x*y);
+    return 0;
+}
+```
