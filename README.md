@@ -181,3 +181,21 @@ int main() {
     return 0;
 }
 ```
+**Bài 11. Nhân chia**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int x;
+    scanf("%d\n",&x);
+    printf("%lld\n",x*2);
+    printf("\n%lld\n",x*10);
+    printf("\n%d\n",x/2);
+    printf("\n%.3f\n",(float)x/2);
+    return 0;
+}
+```
