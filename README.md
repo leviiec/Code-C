@@ -323,4 +323,19 @@ int main() {
     return 0;
 }
 ```
-**
+** Bài 3. Đổi nhiệt độ**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    float C;
+    scanf("%f\n",&C);
+
+    printf("%.2lf\n",(C*9/5)+32);
+    return 0;
+}
+```
