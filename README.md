@@ -255,7 +255,7 @@ int main() {
     return 0;
 }
 ```
-** Bài 15. Mua vở**
+**Bài 15. Mua vở**
 ```
 #include <stdio.h>
 #include <string.h>
@@ -273,7 +273,7 @@ int main() {
 -------------------------------------------------------------------------------------------
 
 ### CONTEST_1
-** Bài 1. Tính toán giá trị của biểu thức**
+**Bài 1. Tính toán giá trị của biểu thức**
 ``` 
 #include <stdio.h>
 #include <string.h>
