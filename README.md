@@ -39,7 +39,7 @@ int main() {
     printf("%d\n",x);
     printf("%lld\n",y);
     printf("%c\n",c);
-    printf("%.2f\n",d);
+    printf("%.2f\n",f);
     printf("%.9lf\n",d);
    
     return 0;
@@ -59,13 +59,10 @@ int main() {
     
     scanf("%d %d %d %d\n",&x,&y,&z,&t);
     printf("%d,%d,%d,%d\n",y,z,x,t);
+    printf("%lld\n",(long long)x+y+z+t);
+    printf("%lld\n",(long long)x-y+1ll*z*t);
     
-    long long sum =x+y+z+t;
-    printf("%lld\n",sum);
-   
-   long long bieu_thuc= x-y+z*t;
-    printf("%lld\n",bieu_thuc);
-         return 0;
+    return 0;
 }
 ```
 
@@ -113,6 +110,7 @@ int main() {
     double x;
     
     scanf("%lf\n",&x);
+    
     printf("%d\n",(int)floor(x));
     printf("%d\n",(int)ceil(x));
     printf("%d\n",(int)round(x));
