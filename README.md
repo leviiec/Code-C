@@ -1,4 +1,4 @@
-###CONTEST0
+### CONTEST_0
 
 **Bài 1. Print Hello World**
 ```
@@ -271,4 +271,21 @@ int main() {
 }
 ```
 -------------------------------------------------------------------------------------------
+
+### CONTEST_1
+** Bài 1. Tính toán giá trị của biểu thức**
+``` 
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    long long x;
+    scanf("%lld\n",&x);
+    printf("%lld\n",x*x*x+3*x*x+x+1);
+    return 0;
+}
+```
 
