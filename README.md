@@ -8,6 +8,7 @@
   #include <stdlib.h>
 
 int main() {
+    
     int a;
     scanf("%d",&a);
     printf("%d\n",a);
@@ -22,6 +23,7 @@ int main() {
 #include <stdio.h>
 
 int main() {
+    
     int x;
     long long y;
     char c;
@@ -111,7 +113,6 @@ int main() {
     double x;
     
     scanf("%lf\n",&x);
-    
     printf("%d\n",(int)floor(x));
     printf("%d\n",(int)ceil(x));
     printf("%d\n",(int)round(x));
@@ -127,6 +128,7 @@ int main() {
 #include <stdlib.h>
 
 int main() {
+    
     long long x;
     scanf("%lld\n",&x);
     
@@ -143,6 +145,7 @@ int main() {
 #include <stdlib.h>
 
 int main() {
+    
     int a,b;
     scanf("%d %d\n",&b,&a);
     printf("%d\n", a/b);
@@ -159,6 +162,7 @@ int main() {
 #include <stdlib.h>
 
 int main() {
+    
     long long x;
     scanf("%lld\n",&x);
     printf("%lld\n",x/1000);
@@ -225,6 +229,7 @@ int main() {
 #include <stdlib.h>
 
 int main() {
+    
     int x,y,z,t;
     scanf("%d\n",&x);
     scanf("%d\n",&y);
@@ -235,7 +240,7 @@ int main() {
     printf("%d\n",(int)fmax(x,fmax(y,z)));
     printf("%d\n",(int)fmin(x,fmin(y,fmin(z,t))));
 
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+      
     return 0;
 }
 ```
