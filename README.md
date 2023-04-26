@@ -339,3 +339,20 @@ int main() {
     return 0;
 }
 ```
+**Bài 4. Chu vi và diện tích hình tròn**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#define PI 3.14
+int main() {
+
+    int R;
+    scanf("%d\n",&R);
+    printf("%.4lf ",2*PI*R );
+    printf("%.4lf",PI*R*R);
+    return 0;
+}
+```
+**
