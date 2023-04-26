@@ -288,4 +288,19 @@ int main() {
     return 0;
 }
 ```
+**Bài 2. Tính toán giá trị biểu thức 2**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
+int main() {
+
+    long long a,b,c;
+    scanf("%lld %lld %lld\n",&a,&b,&c);
+    printf("%lld\n",a*(b+c)+b*(a+c));
+    return 0;
+}
+```
+**
