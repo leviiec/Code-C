@@ -1,3 +1,5 @@
+##CONTEST0
+
 **Bài 1. Print Hello World**
 ```
   #include <stdio.h>
