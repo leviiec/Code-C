@@ -214,6 +214,30 @@ int main() {
     return 0;
 }
 ```
+
+**Bài 13. Lớn nhất, nhỏ nhất**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int x,y,z,t;
+    scanf("%d\n",&x);
+    scanf("%d\n",&y);
+    scanf("%d\n",&z);
+    scanf("%d\n",&t);
+    printf("%d\n",(int)fmax(x,y));
+    printf("%d\n",(int)fmin(z,t));
+    printf("%d\n",(int)fmax(x,fmax(y,z)));
+    printf("%d\n",(int)fmin(x,fmin(y,fmin(z,t))));
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+```
+
 **Bài 14. Number in range**
 ```
 #include <stdio.h>
