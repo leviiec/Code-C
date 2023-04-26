@@ -239,8 +239,7 @@ int main() {
     printf("%d\n",(int)fmin(z,t));
     printf("%d\n",(int)fmax(x,fmax(y,z)));
     printf("%d\n",(int)fmin(x,fmin(y,fmin(z,t))));
-
-      
+   
     return 0;
 }
 ```
@@ -272,6 +271,24 @@ int main() {
     long long a,b;
     scanf("%lld %lld\n",&a,&b);
     printf("SO VO MUA DUOC LA : %lld !!!!!",(long long)floor(a/b));
+    return 0;
+}
+```
+**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int x,y,z,t;
+    scanf("%d %d %d %d\n",&x,&y,&z,&t);
+    printf("%d  %d  %d  %d\n",x,y,z,t);
+    printf("\n%d--%d--%d--%d\n",y,z,x,t);   
+    printf("\n%lld,%lld,%lld,%lld\n",2ll*x,3ll*y,4ll*z,5ll*t);
+    printf("\n%s\n","KET THUC !!");
+    
     return 0;
 }
 ```
