@@ -63,3 +63,16 @@ int main() {
 ```
 **Bài 5. Khoảng cách Euclid.**
 ```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h> 
+ 
+int main() {
+
+    float x1,x2,y1,y2;
+    scanf("%f %f %f %f/n",&x1,&y1,&x2,&y2);
+    printf("%.2lf\n",sqrt(pow(x2-x1,2)+pow(y1-y2,2)));
+    return 0;
+}
+```
