@@ -78,12 +78,12 @@ int main() {
 ```
 **Bài 6. Luyện tập viết câu điều kiện**
 ```
-
 #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
-
-int main(){
-    
+int main (){
     int x;
     scanf("%d\n",&x);
     
@@ -160,4 +160,5 @@ int main(){
     }
     return 0;
 }
+
 ```
