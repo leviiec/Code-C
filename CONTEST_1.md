@@ -76,3 +76,88 @@ int main() {
     return 0;
 }
 ```
+**Bài 6. Luyện tập viết câu điều kiện**
+```
+
+#include <stdio.h>
+
+
+int main(){
+    
+    int x;
+    scanf("%d\n",&x);
+    
+    //1
+    if( x % 2 ==0){
+        printf("YES\n");
+    }
+    else {
+        printf("NO\n");
+    }
+    //2
+    if ( x % 3 == 0 && x % 5 == 0){
+         printf("YES\n");
+    }
+    else {
+        printf("NO\n");
+    }
+    //3
+    if ( x % 3 == 0 && x % 7 !=0 ){
+              printf("YES\n");
+    }
+    else {
+        printf("NO\n");
+    }
+    //4 
+    if( x % 3 == 0 || x % 7 == 0){
+         printf("YES\n");
+    }
+    else {
+          printf("NO\n");
+    }
+    //5
+    if ( x > 30 && x < 50 ){
+         printf("YES\n");
+    }
+    else {
+        printf("NO\n");
+    }
+    //6
+    if (( x >= 30 ) && (x % 2 == 0|| x % 3 == 0|| x % 5 ==0)){
+         printf("YES\n");
+    }
+    else {
+        printf("NO\n");
+    }
+    //7
+    int r = x % 10 ;
+    if (( x >= 10) && (x <= 99) && (r % 2 == 0|| r % 3 == 0|| r % 5 == 0|| r % 7 == 0)){
+        printf("YES\n");
+    }
+    else {
+        printf("NO\n");
+    } 
+    //8
+    if (( x <= 100) && (x % 23 == 0)){
+        printf("YES\n");
+    }
+    else {
+        printf("NO\n");
+    }
+    //9 
+    if (( x < 10) || (x > 20 )){
+        printf("YES\n");
+    }
+    else {
+        printf("NO\n");
+    }
+    //10
+    if ( r % 3 == 0){
+        printf("YES\n");
+    }
+    else {
+        printf("NO\n");
+    }
+    return 0;
+}
+```
