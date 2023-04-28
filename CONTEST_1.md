@@ -96,14 +96,14 @@ int main (){
     }
     //2
     if ( x % 3 == 0 && x % 5 == 0){
-         printf("YES\n");
+        printf("YES\n");
     }
     else {
         printf("NO\n");
     }
     //3
     if ( x % 3 == 0 && x % 7 !=0 ){
-              printf("YES\n");
+        printf("YES\n");
     }
     else {
         printf("NO\n");
@@ -113,11 +113,11 @@ int main (){
          printf("YES\n");
     }
     else {
-          printf("NO\n");
+         printf("NO\n");
     }
     //5
     if ( x > 30 && x < 50 ){
-         printf("YES\n");
+        printf("YES\n");
     }
     else {
         printf("NO\n");
