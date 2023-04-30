@@ -339,3 +339,25 @@ int main() {
     return 0;
 }
 ```
+**Bài 14. Xếp loại học sinh**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float a,b,c,d;
+    scanf("%f %f %f %f",&a,&b,&c,&d);
+    float TB = ( a + b + 2*c + 3*d)/7;
+    if ( TB >=8 )
+        printf("GIOI");
+         else if ( TB >= 6.5)
+             printf("KHA");
+         else if ( TB >= 5)
+                 printf ("TRUNG BINH");
+    else printf("YEU");
+     
+    return 0;
+}
+```
