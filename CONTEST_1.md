@@ -472,3 +472,28 @@ int main() {
     return 0;
 }
 ```
+**Bài 20. Lát đá quảng trường**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int n,m,a;
+    scanf("%d %d %d",&n,&m,&a);
+    int doc,ngang;
+    if (n % a == 0)
+        doc = n/a;
+    else 
+        doc = n / a +1;
+    if (m % a == 0)
+        ngang = m / a;
+    else 
+        ngang = m / a + 1;
+    printf( "%lld", 1ll*ngang*doc);
+    return 0;
+}
+
+```
