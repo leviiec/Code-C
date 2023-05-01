@@ -497,3 +497,69 @@ int main() {
 }
 
 ```
+**Bài 21. Frog**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int a,b,k;
+    scanf("%d %d %d",&a,&b,&k);
+    int trai,phai;
+    if (k % 2 == 0)
+        trai = phai = k / 2;
+    else {
+        trai = k / 2;
+        phai = trai + 1;
+        
+    }
+    printf("%lld", 1ll*phai*a-1ll*trai*b);
+    return 0;
+}
+```
+**Bài 22. Đồng xu**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    long long n,s;
+    
+    scanf("%lld %lld ",&n,&s);
+    if (s %  n==0)
+        printf("%lld",s / n);
+    else
+      printf("%lld",s / n + 1);
+   
+    return 0;
+}
+```
+**Bài 23. Doremon leo cầu thang**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,m;
+    scanf ("%d %d",&n,&m);
+    int min, max = n;
+    if (n % 2 == 0)
+        min = n / 2;
+    else 
+        min = n /2 +1;
+    int x = (min + m -1 )/m*m;
+    if (x <= max)
+        printf("%d",x);
+    else 
+        printf("-1");
+    
+    return 0;
+}
+```
