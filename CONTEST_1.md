@@ -563,3 +563,308 @@ int main() {
     return 0;
 }
 ```
+**Bài 24. Đường đi ngắn nhất**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int d1,d2,d3;
+    
+    scanf("%d %d %d",&d1,&d2,&d3);
+    
+    int s1=d1+d3+d2;
+    int s2=d1*2+d2*2;
+    int s3=d1+d3+d3+d1;
+    int s4=2*(d2+d3);
+    
+    printf("%d",(int)fmin(fmin(s1,s2), fmin(s3,s4)));
+       
+    return 0;
+}
+```
+**Bài 25. Đổi tiền**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+   
+    int n;
+    
+    scanf("%d",&n);
+    
+    int x=0;
+    x+=n/100; n=n%100;
+    x+=n/20; n=n%20;
+    x+=n/10; n=n%10;
+    x+=n/5; n=n%5;
+    x+=n;
+    printf("%d",x);
+
+       
+    return 0;
+}
+```
+**Bài 26. Số lớn nhất nhỏ nhất trong 4 số**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    long long a,b,c,d;
+   
+    scanf("%lld %lld %lld %lld",&a,&b,&c,&d);
+   
+    long long min=a, max=a;
+   
+    if(b<min) min=b;
+    if(c<min) min=c;
+    if(d<min) min=d;
+    if(b>max) max=b;
+    if(c>max) max=c;
+    if(d>max) max=d;
+    
+    printf("%lld %lld",max,min);
+      
+    return 0;
+}
+```
+**Bài 27. Làm tròn số**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    double a;
+    
+    scanf("%lf",&a);
+    printf("%d",(int)round(a));
+     
+    return 0;
+}
+```
+**Bài 28. Cấp số cộng**
+```
+include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,u1,d;
+    
+    scanf("%d %d %d",&n,&u1,&d);
+    long long un=u1+1ll*(n-1)*d;
+    long long S=n*(u1+un)/2;
+  
+    printf("%lld",S);
+ 
+    return 0;
+}
+```
+**Bài 29. Cấp số nhân**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b,c,d;
+    
+    scanf("%d %d %d %d",&a,&b,&c,&d);
+    
+    if(b % a ==0){
+        int x = b / a;
+        b *= x;
+        if( b == c){
+            c *= x;
+            if( c == d){
+                printf("YES");
+            }
+        }
+    }
+    else
+        printf("NO");
+    
+    return 0;
+}
+```
+**Bài 30. Tổ hợp chập 2**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n;
+   
+    scanf("%d",&n);
+    printf("%lld",1ll*n*(n-1)/2);
+  
+    return 0;
+}
+```
+**Bài 31. Bizon the Champion**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a1,a2,a3,b1,b2,b3,n;
+    
+    scanf("%d %d %d %d %d %d\n",&a1,&a2,&a3,&b1,&b2,&b3);
+    scanf("%d",&n);
+    
+    int x=(int)ceil(((double)a1+a2+a3)/5);
+    int y=(int)ceil(((double)b1+b2+b3)/10);
+    
+    if(x<n){
+        if (y<=(n-x))
+            printf("YES");
+        else 
+            printf("NO");
+    }
+    else 
+        printf("NO");
+    return 0;
+}
+```
+**Bài 32. Ghép số**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int k2,k3,k5,k6;
+    
+    scanf("%d %d %d %d",&k2,&k3,&k5,&k6);
+    
+    int x = fmin(k2,fmin(k6,k5));
+    if(x == k2)
+        printf("%lld",x*256ll);
+    
+    else{
+        if((k2-x)<k3)
+            printf("%lld",256ll*x+32ll*(k2-x));
+        
+        else
+            printf("%lld",256ll*x+32ll*k3);
+        
+    }
+    return 0;
+}
+```
+**Bài 33. Chia tiền**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b,c,n;
+    scanf("%d %d %d %d",&a,&b,&c,&n);
+    
+    int tong = a+b+c+n;
+    if(tong % 3==0){
+        int x = tong/3;
+        if(x >= a && x >= b && x >= c)
+            printf("YES");
+    
+        else 
+            printf("NO");
+    }
+    else 
+        printf("NO");
+
+    return 0;
+}
+```
+**Bài 34. Sự hào phóng**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b,c,d,e;
+   
+    scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+    
+    if ((a + b + c + d + e) % 5 == 0 &&( a + b + c + d + e) != 0)
+       printf("%d",(a + b + c + d + e )/5);
+    else printf("-1");
+   
+    return 0;
+}
+```
+**Bài 35. HPNY**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    
+    int h,m;
+    
+    scanf("%d %d",&h,&m);
+    int x = 24*60; 
+    printf("%d",x - ( h * 60 + m));
+    
+    return 0;
+}
+```
+**Problem E**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    
+    double a,b,c;
+    scanf("%lf %lf %lf",&a,&b,&c);
+    if( a == 0 && b == 0 && c == 0)
+        printf("VO SO NGHIEM");
+    
+    else if( a == 0 && b == 0 && c != 0)
+        printf("VO NGHIEM");
+    
+    else if(a == 0)
+        printf("%.2lf",-c/b);
+    
+    else{
+        double delta = b*b-4*a*c;
+        if( delta<0) 
+            printf("VO NGHIEM");
+        else if (delta == 0) 
+            printf("%.2lf",-b/(2*a));
+        else{
+            
+            double x1=(-b-sqrt(delta))/(2*a);
+            double x2=(-b+sqrt(delta))/(2*a);
+            printf("%.2lf %.2lf",fmin(x1,x2), fmax(x1,x2));
+        }
+    }
+        return 0;
+ }
+ ```
