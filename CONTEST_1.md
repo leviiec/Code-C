@@ -435,3 +435,22 @@ int main() {
     return 0;
 }
 ```
+**Bài 18. Chuyển đổi in hoa in thường**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    char c;
+    scanf("%c",&c);
+    if ( c >= 'a' && c <= 'z')
+        c -=32;
+    else if (c >= 'A' && c <= 'Z')
+        c +=32;
+    printf("%c",c);
+    return 0;
+}
+```
