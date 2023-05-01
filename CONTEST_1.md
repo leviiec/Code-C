@@ -454,3 +454,21 @@ int main() {
     return 0;
 }
 ```
+**Bài 19. Domino**
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,m;
+    scanf("%d %d",&m,&n);
+    if (n % 2 == 0)
+        printf("%lld",1ll*n / 2 * m);
+    else 
+        printf("%lld",1ll*n / 2 * m + m / 2);
+    
+    return 0;
+}
+```
