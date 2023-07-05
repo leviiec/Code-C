@@ -1,5 +1,5 @@
 ##CONTEST_2
-
+    
 #Bài 1. Tổng tự nhiên liên tiếp
 ```
 #include <cmath>
