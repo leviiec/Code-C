@@ -210,7 +210,147 @@ int main() {
 }
 ```
 ---
-#
+#Bài 10. Kiểm tra số 2022
 ```
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int check =0;
+    for(int i=1; i <= n;i++){
+        int tmp=0;
+        scanf("%d",&tmp);
+    if(tmp==2022){
+        check=1;
+    }
+    }
+    if (check == 1)
+        printf("YES\n");
+    else 
+        printf("NO\n");
+    return 0;
+}
+```
+---
+#Bài 11. Tổng chẵn lẻ
+```
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    long long n;
+    scanf("%lld",&n);
+    long long tong =0;
+    for( int i=1; i <= n;i++){
+        if (i % 2 ==0){
+            tong+=i;
+        }
+        else 
+            tong-=i;
+    }
+    printf("%lld",tong);
+    return 0;
+}
+```
+#Bài 12. Tổng bội 2
+```
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    long long n;
+    scanf("%lld",&n);
+    long long tong=0;
+    for( int i=1; i<=n; i++){
+            tong+=2*i;
+        
+    }
+    printf("%lld", tong);
+    return 0;
+}
+```
+---
+#Bài 13. Tổng lẻ
+```
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    long long n;
+    scanf("%lld",&n);
+    long long tong=0;
+    for( int i=1; i<=n; i++){
+            tong+=2*i-1;
+        
+    }
+    printf("%lld", tong);
+    return 0;
+}
+```
+---
+#Bài 14. Tổng lập phương
+```
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    long long n;
+    scanf("%lld",&n);
+    long long tong=0;
+    for(int i=1; i<=n;i++){
+        tong+=1ll*i*i*i;
+    }
+    printf("%lld",tong);
+    return 0;
+}
+```
+---
+#Bài 15. Tính giai thừa
+```
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    long long n;
+    scanf("%lld",&n);
+    long long gt=1;
+    for( int i =1; i <= n;i++){
+        gt*=i;
+    }
+    printf("%lld", gt);
+    return 0;
+}
 ```
 ---
