@@ -131,8 +131,86 @@ int main() {
         sum +=n/i;
         }
     }
+---
+#Bài 7. Liệt kê ước
+```
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    long long n;
+    scanf("%lld",&n);
+    int dem=0;
+    for (int i=1; i<=n; i++){
+        if(n % i==0){
+            ++dem;
+        }
+    }
+    printf("%d\n",dem);
+    for (int i=1; i<=n;i++){
+        if (n %i==0){
+            printf("%d ", i);
+        }
+    }
+    
+    return 0;
+}
+```
     printf("%lld\n",sum);
     return 0;
 }
+---
+#Bài 8. Liệt kê số chính phương
+```
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    long long n;
+    scanf("%lld", &n);
+    for (int i=1; i<=sqrt(n);i++){
+        printf("%lld ", 1ll*i*i);
+    }
+    return 0;
+}
+```
+---
+#Bài 9. Tích các ước
+```
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    long long n;
+    scanf("%lld", &n);
+    long long tich=1;
+    for(int i =1; i<=n;i++){
+        if (n % i ==0){
+        	tich*=i;
+		}
+        
+    }
+    printf("%lld", tich);
+    return 0;
+}
+```
+---
+#
+```
 ```
 ---
