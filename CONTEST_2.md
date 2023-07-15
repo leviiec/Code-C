@@ -354,3 +354,79 @@ int main() {
 }
 ```
 ---
+#Bài 16. Đếm số lượng chữ số của N
+```
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    long long n;
+    scanf("%lld",&n);
+    if (n==0){
+    	printf("1\n");
+		return 0;
+	}
+    long long cnt=0;
+    while(n!=0){
+        ++cnt;
+        n/=10;
+    }
+    printf("%lld",cnt);
+    return 0;
+}
+
+```
+---
+# Bài 17. Tính tổng chữ số của N
+```
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    long long n;
+    scanf("%lld",&n);
+    long long tong=0;
+    while(n){
+        sum += n%10;
+        n/=10;
+    }
+    printf("%lld",tong);
+    return 0;
+}
+```
+---
+# Bài 18. Đếm chữ số nguyên tố của số nguyên
+```
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    long long n;
+    scanf("%lld",&n);
+    long long cnt=0;
+    while(n){
+        int r = n%10;
+        if(r ==2|| r==3||r==5||r==7)
+        ++cnt;
+        n/=10;
+    }
+    printf("%lld",cnt);
+    return 0;
+}
+```
+---
