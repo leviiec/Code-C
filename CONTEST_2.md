@@ -31,7 +31,6 @@ int main() {
 #include <algorithm>
 using namespace std;
 
-
 int main() {
     int n;
     scanf("%d",&n);
@@ -45,6 +44,7 @@ int main() {
 ```
 ---
 #Bài 3. Tổng bội của 3
+
 ```
 #include <cmath>
 #include <cstdio>
@@ -52,7 +52,6 @@ int main() {
 #include <iostream>
 #include <algorithm>
 using namespace std;
-
 
 int main() {
     int n;
@@ -74,8 +73,6 @@ int main() {
 #include <iostream>
 #include <algorithm>
 using namespace std;
-
-
 int main() {
     int n;
     scanf("%d",&n);
@@ -97,7 +94,6 @@ int main() {
 #include <algorithm>
 using namespace std;
 
-
 int main() {
     int n;
     scanf("%d",&n);
@@ -110,6 +106,7 @@ int main() {
 }
 ```
 ---
+
 #Bài 6. Tổng ước
 ```
 #include <cmath>
@@ -118,7 +115,6 @@ int main() {
 #include <iostream>
 #include <algorithm>
 using namespace std;
-
 
 int main() {
     long long n;
@@ -131,6 +127,7 @@ int main() {
         sum +=n/i;
         }
     }
+```
 ---
 #Bài 7. Liệt kê ước
 ```
@@ -140,8 +137,6 @@ int main() {
 #include <iostream>
 #include <algorithm>
 using namespace std;
-
-
 int main() {
     long long n;
     scanf("%lld",&n);
@@ -160,10 +155,10 @@ int main() {
     
     return 0;
 }
-```
     printf("%lld\n",sum);
     return 0;
 }
+```
 ---
 #Bài 8. Liệt kê số chính phương
 ```
@@ -173,8 +168,6 @@ int main() {
 #include <iostream>
 #include <algorithm>
 using namespace std;
-
-
 int main() {
     long long n;
     scanf("%lld", &n);
@@ -193,7 +186,6 @@ int main() {
 #include <iostream>
 #include <algorithm>
 using namespace std;
-
 
 int main() {
     long long n;
@@ -218,7 +210,6 @@ int main() {
 #include <iostream>
 #include <algorithm>
 using namespace std;
-
 
 int main() {
     int n;
