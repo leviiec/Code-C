@@ -405,7 +405,7 @@ int main() {
 }
 ```
 ---
-# Bài 18. Đếm chữ số nguyên tố của số nguyên
+#Bài 18. Đếm chữ số nguyên tố của số nguyên
 ```
 #include <cmath>
 #include <cstdio>
@@ -427,6 +427,116 @@ int main() {
     }
     printf("%lld",cnt);
     return 0;
+}
+```
+---
+#Bài 19.Mua bia
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+	int n; scanf("%d",&n);
+	int kq=n/28;
+	int vo = kq;
+	while(vo>=3){
+		int bia = vo/3;
+		kq+=bia;
+		vo=bia + vo%3;
+		}
+	printf("%d",kq);  
+    return 0;
+}
+```
+---
+#Bài 20.Biểu diễn số nguyên
+```
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    if(n<=1){
+        printf("-1\n");
+    }
+    else{
+        printf("%d\n",n/2);
+        if(n%2==0){
+            for(int i=0;i<n/2;i++){
+                printf("2 ");
+            }
+        }
+        else{
+            for(int i=0; i<n/2 -1;i++){
+                printf("2 ");
+            }
+            printf("3 ");    
+        }
+    }
+    return 0;
+}
+```
+---
+#Bài 21.Vẽ hình 1
+```
+ #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+   int n;
+   scanf("%d",&n);
+   for(int i=1; i<=n;i++){
+		for(int j=1;j<=n;j++){
+			printf("*");
+		}
+		printf("\n");
+   }
+   printf("\n");
+   
+   for (int i=1; i<=n;i++){
+   		for(int j=1;j<=n;j++){
+   			if(i==1||i==n||j==1||j==n){
+   				printf("*");
+   			}
+   			else{
+   				printf(" ");
+			   }
+			   
+		   }
+		printf("\n");
+   }
+   printf("\n");
+   
+   for (int i=1;i<=n;i++){
+   		for(int j=1;j<=n;j++){
+   			if(i==1||i==n||j==1||j==n){
+   				printf("*");
+			   }
+			else{
+				printf("#");
+			}
+		   }
+		printf("\n");
+   }
+   printf("\n");
+   
+   for(int i=1; i<=n; i++){
+        for(int j =1;j<=n;j++){
+            if(i==1 || i==n || j==1 || j==n){
+                printf("%d ",i);
+            }
+            else printf("  ");
+        }
+        printf("\n");
+    }
+   return 0;
 }
 ```
 ---
